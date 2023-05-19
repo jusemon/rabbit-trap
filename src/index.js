@@ -1,3 +1,9 @@
+import { Controller } from "./controller";
+import { Display } from "./display";
+import { Engine } from "./engine";
+import { World } from "./game";
+import { tileSetImg, zone00 } from "./assets";
+
 /**
  * Event listener function that initializes the game when the window loads.
  *
