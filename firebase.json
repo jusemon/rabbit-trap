@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "site": "rabbit-trap-jsm",
+    "public": "dist/min",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "**/*.zip"
+    ]
+  }
+}
