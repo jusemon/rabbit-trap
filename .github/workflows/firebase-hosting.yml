@@ -11,7 +11,7 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@ff6e7dde58a4f7f1db590927596bf683250c6cc8
         with:
@@ -20,3 +20,6 @@ jobs:
           channelId: live
           projectId: unity-d9e20
           target: rabbit-trap-jsm
+permissions:
+  pull-requests: write
+  checks: write
