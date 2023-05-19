@@ -1,0 +1,24 @@
+{
+  "name": "rabbit-trap",
+  "version": "1.0.0",
+  "description": "A platformer minigame",
+  "main": "index.js",
+  "scripts": {
+    "clean": "del-cli dist",
+    "build": "npm run clean && rollup -c",
+    "serve": "npm run clean && rollup -c --watch"
+  },
+  "author": "Juan Sebastian Montoya",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@web/rollup-plugin-html": "^2.0.0",
+    "chalk": "^5.2.0",
+    "del-cli": "^5.0.0",
+    "rollup": "^3.22.0",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-zip": "^1.0.3"
+  }
+}
